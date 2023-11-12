@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  background: url(./components/images/horizontal6.jpg) center no-repeat;
+  background: url(./components/images/horizontal7.jpg) center no-repeat;
   background-size: cover;
   height: 100dvh;
 }
@@ -44,7 +44,7 @@ body {
 .info h1 {
   font-size: 5rem;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--primary);
   position: relative;
   padding: 1rem;
   z-index: 999;
@@ -75,32 +75,32 @@ body {
 
 .info h2 {
   margin-bottom: 2rem;
-  color: var(--dark);
+  color: var(--primary);
   font-size: 3rem;
 }
 
 .tempmin_max {
   margin-bottom: 2rem;
-  color: var(--dark);
+  color: var(--primary);
   font-size: 2rem;
 }
 
 .timezone {
   margin-bottom: 2rem;
-  color: var(--dark);
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .currentDate {
-  color: var(--dark);
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 @media (max-width: 768px) {
   .container {
-    background: url(./components/images/vertical1.jpg) center no-repeat;
+    background: url(./components/images/vertical7.jpg) center no-repeat;
     background-size: cover;
     height: 100dvh;
     color: #ffff;
@@ -131,7 +131,7 @@ body {
 
   .tempmin_max {
     margin-bottom: 2rem;
-    color: var(--dark);
+    color: var(--primary);
     font-size: 1.4rem;
   }
 }
