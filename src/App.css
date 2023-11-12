@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary: #ffff;
+  --dark: #111111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  height: 100dvh;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: url(./components/images/horizontal6.jpg) center no-repeat;
+  background-size: cover;
+  height: 100dvh;
+}
+
+.container form {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  border-radius: 50px;
+}
+
+.container form input {
+  border-radius: 50px;
+}
+
+.info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.info h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--dark);
+  position: relative;
+  padding: 1rem;
+  z-index: 999;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.info h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* z-index: 1; */
+  border-radius: 5px;
+}
+
+.errorMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.info h2 {
+  margin-bottom: 2rem;
+  color: var(--dark);
+  font-size: 3rem;
+}
+
+.tempmin_max {
+  margin-bottom: 2rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+
+.timezone {
+  margin-bottom: 2rem;
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.currentDate {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    background: url(./components/images/vertical7.jpg) center no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    color: #ffff;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container form {
+    width: 100%;
+  }
+
+  .info h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    /* background-color: #f4f7f8; */
+    position: relative;
+    padding: 1.5rem;
+    z-index: 999;
+  }
+
+  .errorMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .tempmin_max {
+    margin-bottom: 2rem;
+    color: var(--dark);
+    font-size: 1.4rem;
   }
 }
