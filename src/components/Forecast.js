@@ -57,7 +57,7 @@ const Forecast = () => {
               <i className="fa-solid fa-earth-asia"></i> {search}
             </h1>
             <h2 className="temp">
-              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <i className="fa-solid fa-temperature-three-quarters"></i>
               {city.temp}°Cel
             </h2>
             <h3 className="tempmin_max">
