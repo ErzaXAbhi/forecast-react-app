@@ -100,14 +100,14 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    background: url(./components/images/vertical7.jpg) center no-repeat;
+    background: url(./components/images/vertical1.jpg) center no-repeat;
     background-size: cover;
     height: 100dvh;
     color: #ffff;
   }
 
   .container form {
-    width: 100%;
+    width: 60%;
   }
 
   .info h1 {
